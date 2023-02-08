@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Calculadora.css">
+    <script src="Calculadorajs.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4" align="center">
+                <input type="text" name="display2" id="display2" class="color_display">
+                <input type="text" name="display" id="display" class="color_display">
+            </td>
+            
+        </tr>
+       
+        <tr>
+            <td><input type="button" value="7" name="num7" id="num7" class="numero" onclick="display_numeros(7)"></td>
+            <td><input type="button" value="8" name="num8" id="num8" class="numero" onclick="display_numeros(8)"></td>
+            <td><input type="button" value="9" name="num9" id="num9" class="numero" onclick="display_numeros(9)"></td>
+            <td><input type="button" value="+" name="button1" id="button1" class="numero" onclick="operacion(value)"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" name="num4" id="num4" class="numero" onclick="display_numeros(4)"></td>
+            <td><input type="button" value="5" name="num5" id="num5" class="numero" onclick="display_numeros(5)"></td>
+            <td><input type="button" value="6" name="num6" id="num6" class="numero" onclick="display_numeros(6)"></td>
+            <td><input type="button" value="-" name="button2" id="button2" class="numero" onclick="operacion(value)"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" name="num1" id="num1" class="numero" onclick="display_numeros(1)"></td>
+            <td><input type="button" value="2" name="num2" id="num2" class="numero" onclick="display_numeros(2)"></td>
+            <td><input type="button" value="3" name="num3" id="num3" class="numero" onclick="display_numeros(3)"></td>
+            <td><input type="button" value="*" name="button3" id="button3" class="numero" onclick="operacion(value)"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" name="num0" id="num0" class="numero" onclick="display_numeros(0)"></td>
+            <td><input type="button" value="AC" name="ac" id="ac" class="numero" onclick="ac()"></td>
+            <td><input type="button" value="=" name="buttonIgual" id="buttonIgual" class="numero" onclick="resultado()"></td>
+            <td><input type="button" value="/" name="button4" id="button4" class="numero" onclick="operacion(value)"></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
